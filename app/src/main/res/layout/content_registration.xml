@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_user_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ke.merlin.modules.setup.RegistrationActivity"
+    tools:showIn="@layout/activity_registration">
+
+    <ProgressBar
+        android:id="@+id/registration_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/registration_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRegName"
+                style="@style/AllTextView"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/etRegName"
+                style="@style/AllEdiText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvRegEmail"
+                style="@style/AllTextView"
+                android:text="Email Address" />
+
+            <EditText
+                android:id="@+id/etRegEmail"
+                style="@style/AllEdiText"
+                android:inputType="textEmailAddress"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvRegUsername"
+                style="@style/AllTextView"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/etRegUsername"
+                style="@style/AllEdiText"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvRegPassword"
+                style="@style/AllTextView"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etRegPassword"
+                style="@style/AllEdiText"
+                android:inputType="textPassword"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvRegStation"
+                style="@style/AllTextView"
+                android:text="Station Name" />
+
+            <EditText
+                android:id="@+id/etRegStation"
+                style="@style/AllEdiText"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/ButtonStyle"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/btnSync"
+                style="@style/ButtonStyle"
+                android:visibility="gone"
+                android:text="Sync" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

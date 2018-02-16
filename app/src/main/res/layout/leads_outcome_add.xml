@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/registration_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/outcome_spinner"
+                style="@style/AllTextView"
+                android:text="Outcome" />
+
+            <Spinner
+                android:id="@+id/sp_outcome"
+                android:prompt="@string/spinner_title"
+                style="@style/AllSpinner"
+                android:spinnerMode="dialog"
+                tools:listitem="@android:layout/simple_spinner_item" />
+
+            <TextView
+                android:id="@+id/tvOutcomeExplanationLead"
+                style="@style/AllTextView"
+                android:text="Outcome Explanation" />
+
+            <EditText
+                android:id="@+id/txt_outcome_explanation"
+                style="@style/AllMultiline"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvNextVisitLead"
+                style="@style/AllTextView"
+                android:text="Next Visit Date" />
+
+            <EditText
+                android:id="@+id/txt_next_visit"
+                style="@style/AllEdiText"
+                android:text="" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save_lo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/loginbutton_bg"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_cancel_lo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Cancel" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

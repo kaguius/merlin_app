@@ -1,0 +1,255 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColorError">@color/design_textinput_error_color_light</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="txt_appearance_sml">?android:textAppearanceSmall</style>
+
+    <style name="txt_appearance_md">?android:attr/textAppearanceMedium</style>
+
+    <style name="txt_appearance_lg">?android:attr/textAppearanceLarge</style>
+
+
+    <!-- UsersBean Linear Layout -->
+    <style name="LoginLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Inner Layout -->
+    <style name="InnerLinearLayout">
+        <item name="android:background">#fff</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Heading TextView -->
+    <style name="HeaderTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/lg_welcome</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- All TextView -->
+    <style name="AllTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="BoldTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="StdListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/marlinlight</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="addfloat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">16dp</item>
+
+    </style>
+
+    <style name="stdimagebutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+
+    </style>
+
+    <style name="OrangeTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- All Multiline -->
+    <style name="AllMultiline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">top</item>
+        <item name="android:lines">2</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+
+    <!-- All EditText -->
+    <style name="AllEdiText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!-- All Spinners -->
+    <style name="AllSpinner" parent="@style/Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+
+    <!-- All Date -->
+    <style name="AllDate">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/text_background</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:inputType">date</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:ems">10</item>
+    </style>
+
+
+    <!-- Special Text View -->
+    <style name="SpecialTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textAppearance">@style/txt_appearance_lg</item>
+    </style>
+
+    <!-- Special Text View -->
+    <style name="LogoutTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/marlindark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textAppearance">@style/txt_appearance_lg</item>
+    </style>
+
+
+    <!-- Button -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/loginbutton_bg</item>
+    </style>
+
+
+    <!-- LineView Separator -->
+    <style name="LineSeparator">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">#ff1ac0b7</item>
+    </style>
+
+    <style name="StdScroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="StdLinear">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="StdRelative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Capture">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAppearance">@style/txt_appearance_md</item>
+        <item name="android:textColor">@color/marlinlighter</item>
+        <item name="android:background">#333</item>
+        <item name="android:textSize">@dimen/s35</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ems">10</item>
+    </style>
+
+</resources>

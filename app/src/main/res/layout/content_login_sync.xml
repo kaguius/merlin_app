@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ke.merlin.modules.setup.FirsttimeSyncActivity"
+    tools:showIn="@layout/activity_login_sync">
+
+    <Button
+        android:id="@+id/btnDone"
+        style="@style/ButtonStyle"
+        android:background="@color/blue_normal"
+        android:text="Sync Now" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/ButtonStyle"
+            android:background="@color/blue_normal"
+            android:text="Status: " />
+
+        <TextView
+            android:id="@+id/txtDone"
+            style="@style/ButtonStyle"
+            android:background="@color/blue_normal"
+            android:text="Not started..." />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/ButtonStyle"
+        android:visibility="gone"
+        android:background="@color/marlindark"
+        android:text="Proceed to Login" />
+
+</LinearLayout>

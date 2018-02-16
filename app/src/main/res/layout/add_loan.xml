@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvaffordability"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Customer Affordability: "
+        android:textSize="@dimen/s30"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvProduct"
+            style="@style/AllTextView"
+            android:text="Product" />
+
+        <Spinner
+            android:id="@+id/spProduct"
+            style="@style/AllSpinner"
+            android:paddingLeft="10dp"
+            android:prompt="@string/spinner_title"
+            android:spinnerMode="dialog"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/lyt_dis_phone_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_dis_phone_l"
+            style="@style/AllEdiText"
+            android:hint="Disbursement Number"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLoanAmount"
+            style="@style/AllTextView"
+            android:text="Loan Amount" />
+
+        <Spinner
+            android:id="@+id/spLoanAmount"
+            style="@style/AllSpinner"
+            android:paddingLeft="10dp"
+            android:prompt="@string/spinner_title"
+            android:spinnerMode="dialog"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save_l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/loginbutton_bg"
+            android:gravity="center"
+            android:text="Create Loan"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_cancel_l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>

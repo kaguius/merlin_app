@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/lyt_idno_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txt_idno_cv"
+            style="@style/AllEdiText"
+            android:hint="ID NO." />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/lyt_dob_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_dob_cv"
+            style="@style/AllEdiText"
+            android:hint="Date of birth" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_language_cv"
+            style="@style/AllTextView"
+            android:text="Language" />
+
+        <Spinner
+            android:id="@+id/sp_language_cv"
+            style="@style/AllSpinner"
+            android:prompt="@string/spinner_title"
+            android:spinnerMode="dialog"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_marital_cv"
+            style="@style/AllTextView"
+            android:text="Marital Status" />
+
+        <Spinner
+            android:id="@+id/sp_marital_cv"
+            style="@style/AllSpinner"
+            android:prompt="@string/spinner_title"
+            android:spinnerMode="dialog"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_approval_status_cv"
+            style="@style/AllTextView"
+            android:text="Approval Status" />
+
+        <Spinner
+            android:id="@+id/sp_approval_status_cv"
+            style="@style/AllSpinner"
+            android:prompt="@string/spinner_title"
+            android:spinnerMode="dialog"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_identity_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <ScrollView style="@style/StdScroll">
+
+            <LinearLayout style="@style/StdLinear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btnPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:maxWidth="200dp"
+                        android:minWidth="50dp"
+                        android:padding="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/leads"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btnIdFront"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Id Front" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivIdFront"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:maxWidth="200dp"
+                        android:minWidth="50dp"
+                        android:padding="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_menu_camera"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btnIdBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Id Back" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivIdBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:maxWidth="200dp"
+                        android:minWidth="50dp"
+                        android:padding="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_menu_camera"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

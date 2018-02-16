@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="ke.merlin.modules.search.SearchFragment"
+tools:showIn="@layout/fragment_search">
+
+<!-- TODO: Update blank fragment layout -->
+<ScrollView style="@style/StdScroll">
+
+    <LinearLayout style="@style/StdLinear">
+
+        <TextView
+            android:id="@+id/tvPhoneNumber_s"
+            style="@style/AllTextView"
+            android:text="Phone Number" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber_s"
+            style="@style/AllEdiText"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvFirstName_s"
+            style="@style/AllTextView"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/etFirstName_s"
+            style="@style/AllEdiText"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvLastName_s"
+            style="@style/AllTextView"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/etLastName_s"
+            style="@style/AllEdiText"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvNationalId_s"
+            style="@style/AllTextView"
+            android:text="National Id" />
+
+        <EditText
+            android:id="@+id/etNationalId_s"
+            style="@style/AllEdiText"
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/btnSearchCustomer_s"
+            style="@style/ButtonStyle"
+            android:text="Search Customer" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
